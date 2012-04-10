@@ -1,0 +1,19 @@
+StatesAndCapitals
+=================
+
+A fully featured Android game that tests the player's knowledge of US States and Capitals. 
+
+Main Screen: Asks for user's name, to start the game. Can also view a help screen, or the high scores page.
+
+Help Screen: Provides information on how to play the game, and navigate the app.
+
+Scores Screen: Shows the high scores of previous players. This screen is also called at the end of the game. The users current score will be highlighted in yellow, and the view will scroll to it's place in the list.
+
+Game Screen: Where the game is played. A States/Capitals button allows the user to select if a state or capital is to be entered. Depending on the mode, the graphic will change. If the user has to guess a state, a blurry map of the US will appear, with a '?' over it. If the user has to guess the capital of a state, an image of that state will appear. The user's score is also tracked, and depending on their percentage, the score text color will change. 80% and above will display in green, 60-79% will display in orange, and 59% and below will display in red. The user must type in their answers, however an autocomplete dialog is provided, to assist users who may not know the exact spelling. Once the game is over, and the user is on the Scores page, hitting the "back" button on their device will return them to the Main Screen, where they can start a new game.
+
+Note: Please view the .jpg files in the "Screenshots" folder for screenshots of this app. 
+
+Additionally, the purpose of this assignment was to interact with the SD card on a device. While it makes sense to create the scores.txt to store user scores, installing the state/capital file on the SD card was done only as an exercise in interacting with the SD card. Had this not been a requirement, this data could have just been loaded from the /raw directory directly. 
+
+This app also demonstrates the passing of extra data between activities, and further customization of GUI and layouts. 
+
