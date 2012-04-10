@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- custombutton.xml -->
+
+<!-- )))))))))))))))))))))))) Custom Button Selector (((((((((((((((((((((((((((
+     This changes the button background drawable, depending on the button state.
+     This is the "Play Game!" button that starts the game.
+     When pressed this button is highlighted in orange. 
+     Note: Default is ALWAYS last! 
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- ________________________BUTTON PRESSED_____________________________ -->
+    <item 
+        android:state_pressed="true"
+    >
+        <!-- Rectangle Shape -->
+              <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/buttonShape_Default"
+            android:shape="rectangle"
+        >
+
+            <!-- Yellow to lightGrey Gradient Background -->
+            <gradient
+                android:startColor="@color/lightGrey"
+               android:endColor="@color/mapYellow"
+                android:type="linear"
+                android:angle="90"
+                android:centerY=".925"
+            /> 
+                
+            <!-- Orange Border -->
+            <stroke
+                android:width="4px"
+                android:color="@color/mapOrange"
+            />
+           
+            <!--  Rounded Corners (all sides) -->
+            <corners    
+                android:topLeftRadius="8dip"        
+                android:bottomLeftRadius="8dip"
+                android:topRightRadius="8dip"
+                android:bottomRightRadius="8dip"
+            />
+        </shape>
+    </item>    
+     
+    <!-- ________________________BUTTON FOCUSED_____________________________ -->
+    <item
+        android:state_focused="true"
+    >
+        
+        <!-- Rectangle Shape -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/buttonShape_Focused"
+            android:shape="rectangle"
+        >
+    
+            <!-- Yellow to Light Grey to White Gradient Background -->
+            <gradient
+                android:startColor="@color/lightGrey"
+               android:centerColor="@color/mapYellow"
+                android:endColor="@color/white"
+                android:type="linear"
+                android:angle="90"
+                android:centerY=".075"
+            /> 
+            
+            <!-- Dashed Turquoise Border -->
+            <stroke
+                android:width="3dip"
+                android:color="@color/mapTurquoise"
+                android:dashGap="2dip"
+                android:dashWidth="8dip"
+            />
+               
+            <!--  Rounded Corners (all sides) -->
+            <corners    
+                android:topLeftRadius="8dip"
+                android:bottomLeftRadius="8dip"
+                android:topRightRadius="8dip"
+                android:bottomRightRadius="8dip"
+            />
+        </shape>   
+    </item>
+
+    <!-- ________________________BUTTON DEFAULT_____________________________ -->
+    <item>
+        <!-- Rectangle Shape -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/buttonShape_Default"
+            android:shape="rectangle"
+        >
+
+            <!-- Light Grey to Yellow to White Gradient Background -->
+            <gradient
+                android:startColor="@color/lightGrey"
+               android:centerColor="@color/mapYellow"
+                android:endColor="@color/white"
+                android:type="linear"
+                android:angle="90"
+                android:centerY=".075"
+            /> 
+                
+            <!-- Yellow Border -->
+            <stroke
+                android:width="2px"
+                android:color="@color/mapYellow"
+            />
+           
+            <!--  Rounded Corners (all sides) -->
+            <corners    
+                android:topLeftRadius="8dip"        
+                android:bottomLeftRadius="8dip"
+                android:topRightRadius="8dip"
+                android:bottomRightRadius="8dip"
+            />
+        </shape>
+    </item>
+</selector>

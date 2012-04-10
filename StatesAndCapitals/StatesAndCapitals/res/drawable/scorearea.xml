@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- scorearea.xml -->
+
+<!-- ))))))))))))))))))))))))))))))) scorearea ((((((((((((((((((((((((((((((((
+     This is the background for the score area in the game. The background is
+     blue, with an orange border.
+-->
+<shape 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="rectangle"
+>
+    <!-- Blue Background -->
+    <solid 
+        android:color="@color/mapBlue"
+        
+    />
+    
+    <!-- Orange Border -->
+    <stroke
+        android:width=".75dip"
+        android:color="@color/mapOrange"
+    />
+    
+    <!-- Rounded Corners -->
+    <corners
+        android:radius="6dip"
+    />
+    
+</shape>

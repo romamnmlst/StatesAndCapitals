@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- currentscoreentrybackground.xml -->
+
+<!-- ))))))))))))))))))))) currentscoreentrybackground (((((((((((((((((((((((((
+     This is the background file for a highlighted score in the Score page. The 
+     score entry is displayed with a yellow background and white border.  
+-->
+<shape 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="rectangle"
+>
+    <!-- yellow background -->
+    <solid 
+        android:color="@color/mapYellow"
+    />
+    
+    <!-- white border -->
+    <stroke
+        android:width=".75dip"
+        android:color="@color/white"
+    />
+    
+    <!-- slightly rounded corners -->
+    <corners
+       android:radius="3dip"        
+    />
+
+</shape>

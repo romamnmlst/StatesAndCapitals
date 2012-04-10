@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- autocomplete_item.xml -->
+
+<!-- ))))))))))))))))))))))))) autocomplete_item (((((((((((((((((((((((((((((((
+     This defines the textview of each item in the autocompletetextview menu. 
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:textSize="16dip"
+    android:textColor="@color/white">
+</TextView>

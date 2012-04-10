@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- help.xml -->
+
+<!-- ))))))))))))))))))))))))))))))) help ((((((((((((((((((((((((((((((((((((((
+     This is the layout file for the Help.java activity. 
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+>
+
+	<!-- Nested Layout for Logo and Small Map Icon -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/logoBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+    >  
+        <!-- Logo -->
+        <TextView 
+            android:id="@+id/logoHelp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="55dip"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:typeface="monospace"
+            android:background="@drawable/logobackground"
+            android:textColor="@color/black"
+            android:text="@string/logo"
+        />  
+        
+        <!-- Map Image -->
+        <ImageView 
+            android:id="@+id/mapLogoHelp"
+            android:layout_width="83dip"
+            android:layout_height="55dip"
+            android:src="@drawable/logomap3"
+            android:contentDescription="@string/logoDescription"    
+        />
+    </LinearLayout>
+	
+	<!-- Blue Dividing Line -->
+    <View
+        android:id="@+id/lineHelp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/logoBanner"
+        android:background="@color/androidBlue"
+    />    
+    
+    <!-- Help Title -->
+    <TextView 
+        android:id="@+id/helpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineHelp"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="6dip"
+        android:paddingBottom="6dip"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="22dip"
+        android:typeface="monospace"
+        android:background="@drawable/help_background"
+        android:textColor="@color/black"
+        android:text="@string/helpTitle"
+    />  
+   
+    <!-- Scroll View -->
+    <ScrollView
+	    android:id="@+id/SCROLLER_ID"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/helpTitle"
+	    android:scrollbars="vertical"
+	    android:fillViewport="true"
+	    android:fadeScrollbars="false"
+	>    
+    
+        <!-- Help Content Text -->
+        <TextView 
+	        android:id="@+id/helpText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	
+	        android:gravity="left"
+	        android:textSize="11dip"
+	        android:typeface="monospace"
+	        android:padding="5dip"
+	        android:textColor="@color/black"
+	        android:text="@string/helpText"
+         />  
+    
+    </ScrollView>  
+</RelativeLayout>

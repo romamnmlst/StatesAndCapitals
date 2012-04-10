@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- scoreentry.xml -->
+
+<!-- ))))))))))))))))))))))))))))) scoreentry ((((((((((((((((((((((((((((((((((
+     This defines an empty layout that holds each score entry. A single rank,
+     name, and score textview will each be added to this layout. The background
+     default is blue, but when a new score is added, the background will be 
+     updated to be yellow. Layout is horizontal. The width fills the parent, and
+     the height wraps the content. 
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/scoreentrybackground"
+>
+    <!-- Empty Layout, which will be filled programmatically in Scores.java -->
+
+</LinearLayout>

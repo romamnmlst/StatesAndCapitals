@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- arrays.xml -->
+
+<!-- )))))))))))))))))))))))))))))))) arrays (((((((((((((((((((((((((((((((((((
+     This is an array of all of the AutoCompleteTextView suggestions. 
+-->
+<resources>
+    <string-array name="data_array">
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+        <item>Montgomery</item>
+        <item>Juneau</item>
+        <item>Phoenix</item>
+        <item>Little Rock</item>
+        <item>Sacramento</item>
+        <item>Denver</item>
+        <item>Hartford</item>
+        <item>Dover</item>
+        <item>Tallahassee</item>
+        <item>Atlanta</item>
+        <item>Honolulu</item>
+        <item>Boise</item>
+        <item>Springfield</item>
+        <item>Indianapolis</item>
+        <item>De Moines</item>
+        <item>Topeka</item>
+        <item>Frankfort</item>
+        <item>Baton Rouge</item>
+        <item>Augusta</item>
+        <item>Annapolis</item>
+        <item>Boston</item>
+        <item>Lansing</item>
+        <item>Saint Paul</item>
+        <item>Jackson</item>
+        <item>Jefferson City</item>
+        <item>Helena</item>
+        <item>Lincoln</item>
+        <item>Carson City</item>
+        <item>Concord</item>
+        <item>Trenton</item>
+        <item>Santa Fe</item>
+        <item>Albany</item>
+        <item>Raleigh</item>
+        <item>Bismarck</item>
+        <item>Columbus</item>
+        <item>Oklahoma City</item>
+        <item>Salem</item>
+        <item>Harrisburg</item>
+        <item>Providence</item>
+        <item>Columbia</item>
+        <item>Pierre</item>
+        <item>Nashville</item>
+        <item>Austin</item>
+        <item>Salt Lake City</item>
+        <item>Montpelier</item>
+        <item>Richmond</item>
+        <item>Olympia</item>
+        <item>Charleston</item>
+        <item>Madison</item>
+        <item>Cheyenne</item>
+    </string-array>
+</resources>

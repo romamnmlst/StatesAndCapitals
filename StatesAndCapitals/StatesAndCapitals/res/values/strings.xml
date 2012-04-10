@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- strings.xml -->
+
+<!-- ))))))))))))))))))))))))))))))))) strings (((((((((((((((((((((((((((((((((
+     These area all of the strings for the States & Capitals App.
+-->
+<resources>
+
+    <!-- _______________________________Misc________________________________ -->
+     <string name="app_name">States &amp; Capitals</string>
+     <string name="logoDescription">Map Of USA</string>
+     <string name="qustionImageDescription">Blurry map with question mark
+         </string>
+     
+    <!-- ___________________________Startup Screen__________________________ -->
+    <string name="logo">States &amp; Capitals</string>
+    <string name="subtitle">Test your knowledge of the US States and 
+        Capitals!</string>
+    <string name="nameEntry_hint">enter your name</string>
+    <string name="playgameButton">Play Game!</string>
+    <string name="scoreButton">Scores</string>
+    <string name="helpButton">Help</string>
+    
+    <!-- __________________________Game Screen______________________________ -->
+    <string name="toggleOn">State/<b>Capital</b></string>
+    <string name="toggleOff"><b>State</b>/Capital</string>
+    <string name="capital_Hint">enter capital</string>
+    <string name="state_Hint">enter state</string>
+    <string name="score_Title">Score</string>
+    <string name="score_Init">0/0</string>
+    <string name="submitButton">submit</string>
+    
+    <!--  ________________________Scores Screen_____________________________ -->
+    <string name="rankHeader">#</string>
+    <string name="nameHeader">Name</string>
+    <string name="scoreEntryHeader">Score</string>
+    
+    <!-- _________________________Toast Messages____________________________ -->
+    <string name="enterName_Toast">Please enter your name.</string>
+    <string name="fileNotLoaded_Toast">Error loading program data. Please try 
+        reinstalling the program.</string>
+    <string name="scoreFileNotLoaded_Toast">Error loading score data.</string>
+    <string name="gameOver_Toast">This game is over. Please start a new game 
+        from the home screen</string>
+    <string name="enterCapital_Toast">Please enter a capital.</string>
+    <string name="enterState_Toast">Please enter a state.</string>
+    <string name="correct_Toast">"Correct!"</string>
+    <string name="incorrect_Toast">"Incorrect. The answer is: \n"</string>
+    
+    <!-- ___________________________Help Screen_____________________________ -->
+    <string name="helpTitle">Help Information:</string>
+    <string name="helpText" formatted="false">Welcome to \"States &amp; 
+        Capitals\", a game that allows you to test your knowledge of the US 
+        States and Capitals. 
+        \n\n<b>To Play:</b>
+        \n\nTo begin, enter your name and  press the \"Play Game!\" button.
+        \n\nA state or capital will be appear on the screen, and you must 
+        provide the corresponding state or capital that matches. To answer, type
+        your answer in the text field (A light grey text will tell you which to 
+        enter). As you type, word suggestions will be provided in case you 
+        don\'t know the exact spelling of a state or capital. After you have 
+        entered your answer, press the \"Submit\" button to find out if your 
+        answer was right or wrong. If you guess wrong, the correct answer will 
+        be displayed so that you can learn as you play. The next question will 
+        then load. Once you have guessed all 50 states and capitals, the game is 
+        over, and you will be taken to the score page, with your name and score
+        selected in yellow. To play again, pressed the \"back\" button on your 
+        device to return to the main start screen.
+        \n\n<b>State/Capital Mode:</b>
+        \n\nAt any point in the game, you can select which you would like
+        to guess, a state or a capital, by clicking on the blue
+        \"State/Capital\" button in the upper left hand corner of the screen. 
+        When you press this button, the current question will be skipped, and a
+        new question with the desired mode, will be displayed. The light grey
+        text in the text field will update to remind you which mode you are in.
+        If you are in state mode, a blurry image of the USA with a question mark
+        will displayed, and if you are in capital mode, an image of the current
+        state will be displayed.
+        \n\n<b>Scores:</b>
+        \n\nYou can keep track of your score by looking at the blue \"Score:\"
+        box, which is located in the upper right hand corner of the screen. If 
+        your score averages to 80% or above, the score will be displayed in 
+        green, if your score is 60% or above, it will be displayed in orange, 
+        and if your score falls below 60%, it will be displayed in red. 
+        \n\n<b>Score Page:</b>
+        \n\nBefore you start the game, you can click on the \"Scores\" button to
+        view the scores of the people that have played before. Use this to keep
+        track of your progress, or to find a high score to attempt to beat! 
+        You will always be taken to the score page when you finish the game,
+        and your current score will be highlighted in yellow.
+        \n\nWe hope you enjoy the game, and that it provides you with a chance 
+        to solidify your knowledge of the nation\'s states and capitals!
+    </string>
+    
+    <!-- ___________________________Error Tags______________________________ -->
+    <string name="unknownButton">doClick(): default case: unknown button id: 
+        </string>
+    <string name="switchErrorTag">Unknown RadioGroup button pressed: </string>    
+    
+</resources>

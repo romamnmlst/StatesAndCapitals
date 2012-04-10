@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:4 TempConverter -->
+<!-- color.xml -->
+
+<!-- )))))))))))))))))))))))))))))))) Color ((((((((((((((((((((((((((((((((((((
+    These are the color resources that are used in the States & Capitals app.
+-->
+<resources>
+    
+    <!-- _____________________standard ROYGBIV colors_______________________ -->
+    <color name="red">#f00</color>
+    <color name="orange">#ff6600</color>
+    <color name="yellow">#eeee00</color>
+    <color name="green">#f0f0</color>
+    <color name="blue">#0000ff</color>
+    <color name="indigo">#4b0082</color>
+    <color name="violet">#ee82ee</color>
+    
+    <!-- _____________________Black, White, and Greys_______________________ -->
+    <color name="black">#000000</color> 
+    <color name="white">#FFFFFF</color>
+    
+    <color name="darkGrey">#333333</color>    
+    <color name="grey">#666666</color>
+    <color name="lightGrey">#999999</color>
+    <color name="whiteGrey">#cccccc</color>
+   
+    <!-- ____________________________Additional ____________________________ -->
+    <color name="androidBlue">#33B5E5</color>
+    <color name="mapYellow">#ffe368</color>
+    <color name="mapOrange">#fc8a68</color>
+    <color name="mapPurple">#d3bdca</color>
+    <color name="mapBlue">#76b7e1</color>
+    <color name="mapTurquoise">#7dcad0</color>
+    <color name="scoreGreen">#006c00</color>
+</resources>

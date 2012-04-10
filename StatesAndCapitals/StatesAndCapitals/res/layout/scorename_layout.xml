@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- scorename_layout.xml -->
+
+<!-- ))))))))))))))))))))))))))) scorename_layout ((((((((((((((((((((((((((((((
+     This defines the textview for the user name of a score entry. 
+     The color of the text is black. Align text left, and have padding on
+     the left. The text will be updated programmatically. 
+     
+     Note: layout data was being ignored, so width, height, and weight are being
+           defined programmatically.
+-->
+<TextView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="left"
+    android:paddingLeft="12dip"
+    android:textSize="20dip"
+    android:typeface="monospace"
+    android:textColor="@color/black"
+    android:text=""
+/>  
+        

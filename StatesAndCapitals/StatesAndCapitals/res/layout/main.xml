@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- main.xml -->
+
+<!-- ))))))))))))))))))))))))))))))))) main ((((((((((((((((((((((((((((((((((((
+     This is the main layout file for the StatesAndCapitalsActivity.java 
+     activity.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+>
+
+    <!-- Logo Text -->
+    <TextView 
+        android:id="@+id/mainLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:gravity="center"
+        android:textSize="28dip"
+        android:typeface="monospace"
+        android:background="@drawable/logobackground"
+        android:textColor="@color/black"
+        android:text="@string/logo"
+    />  
+    
+    <!-- Blue Dividing Line -->
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/mainLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/androidBlue"
+    />    
+    
+    <!-- Subtitle -->
+    <TextView 
+        android:id="@+id/instructionText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainLogo"
+        android:layout_marginTop="6dip"
+        android:gravity="center"
+        android:textSize="11dip"
+        android:textColor="@color/black"
+        android:text="@string/subtitle"
+    /> 
+    
+    <!-- Main Map Image with "?" -->
+    <ImageView 
+        android:id="@+id/mapLogo"
+        android:layout_below="@+id/instructionText"
+        android:layout_width="250dip"
+        android:layout_height="165dip"
+        android:layout_marginTop="24dip"
+        android:layout_centerHorizontal="true"        
+        android:src="@drawable/logomap3"
+        android:contentDescription="@string/logoDescription"    
+    />
+    
+    <!-- Nested Layout For EditText, and Buttons -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="6dip"
+        android:background="@color/white"
+    >
+     
+         <!-- Enter Your Name EditText with hint -->
+        <EditText 
+	        android:id="@+id/nameEntry"
+	        android:layout_width="250dip"
+	        android:layout_height="40dip"
+	        android:layout_centerHorizontal="true"
+	        android:singleLine="false"
+	        android:textSize="20dip"
+	        android:gravity="center"
+	        android:inputType="text"
+	        android:maxLength="13"
+	        android:background="@drawable/outline_et"
+	        android:textColor="@color/black"
+	        android:hint="@string/nameEntry_hint"
+	    />  
+	    
+	    <!-- "Play Game!" Button -->
+	    <Button 
+	        android:id="@+id/playButton"
+	        android:layout_width="250dip"
+	        android:layout_height="60dip"
+	        android:layout_below="@id/nameEntry"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="12dip"
+	        android:onClick="doClick"
+	        android:typeface="monospace"
+	        android:background="@drawable/custombutton"
+	        android:textColor="@color/black"
+	        android:textSize="20dip"
+	        android:text="@string/playgameButton"
+	    />    
+	    
+	    <!-- Nested Layout For Help and Score buttons -->
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	       android:id="@+id/buttonArea"
+	       android:layout_below="@id/playButton"
+	       android:layout_margin="6dip"
+	       android:layout_centerHorizontal="true"
+	       android:layout_width="258dip"
+	       android:layout_height="wrap_content"
+	       android:orientation="horizontal" 
+	       android:background="@color/white"
+	    >
+	    
+	        <!-- Help Button -->
+	        <Button 
+	            android:id="@+id/helpButton"
+	            android:layout_width="122dip"
+	            android:layout_height="50dip"
+	            android:layout_marginRight="6dip"
+	            android:onClick="doClick"
+	            android:typeface="monospace"
+	            android:background="@drawable/custombutton2"
+	            android:textColor="@color/black"        
+	            android:textSize="20dip"
+	            android:text="@string/helpButton"
+	        />  
+	    
+	        <!-- View Scores Button -->
+	        <Button 
+	            android:id="@+id/scoreButton"
+	            android:layout_width="122dip"
+	            android:layout_height="50dip"
+	            android:onClick="doClick"
+	            android:typeface="monospace"
+	            android:background="@drawable/custombutton2"
+	            android:textColor="@color/black"        
+	            android:textSize="20dip"
+	            android:text="@string/scoreButton"
+	        />
+	    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

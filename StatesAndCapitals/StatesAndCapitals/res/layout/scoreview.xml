@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Matthew Usnick -->
+<!-- Course: CS211D -->
+<!-- HW:5 States & Capitals -->
+<!-- scoreview.xml -->
+
+<!-- )))))))))))))))))))))))))))))))) scoreview ((((((((((((((((((((((((((((((((
+     This is the layout file for the Scores.java activity.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+> 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/logoBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+    >
+        
+        <!-- Logo -->
+        <TextView 
+            android:id="@+id/logoScores"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="55dip"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:typeface="monospace"
+            android:background="@drawable/logobackground"
+            android:textColor="@color/black"
+            android:text="@string/logo"
+        />  
+        
+        <!-- Map Image -->
+        <ImageView 
+            android:id="@+id/mapLogoScores"
+            android:layout_width="83dip"
+            android:layout_height="55dip"
+            android:src="@drawable/logomap3"
+            android:contentDescription="@string/logoDescription"    
+        />
+    </LinearLayout>
+    
+    <!-- Blue Dividing Line -->
+    <View
+        android:id="@+id/lineScores"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/androidBlue"
+    /> 
+    
+    <!-- Nested layout for Header Sections -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scoreHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@color/black"
+    >
+       <!-- Rank Header -->
+       <TextView 
+            android:id="@+id/rankHeader"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:typeface="monospace"
+            android:background="@drawable/scoreheaderbackground"
+            android:textColor="@color/black"
+            android:text="@string/rankHeader"
+        />  
+        
+        <!-- Name Header -->
+        <TextView 
+            android:id="@+id/nameHeader"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:typeface="monospace"
+            android:background="@drawable/scoreheaderbackground"
+            android:textColor="@color/black"
+            android:text="@string/nameHeader"
+        />  
+        
+        <!-- Score Header -->
+        <TextView 
+            android:id="@+id/scoreEntryHeader"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:paddingRight="8dip"
+            android:paddingLeft="8dip"
+            android:typeface="monospace"
+            android:background="@drawable/scoreheaderbackground"
+            android:textColor="@color/black"
+            android:text="@string/scoreEntryHeader"
+        />  
+  
+    </LinearLayout>
+    
+    <!-- ScrollView -->
+    <ScrollView
+	    android:id="@+id/scrollScores"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="vertical"
+	    android:fillViewport="true"
+	    android:fadeScrollbars="true"
+	    android:background="@color/white"
+    > 
+      
+	    <!-- Score Container -->
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/scoreContainer"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:background="@color/white"
+	    >
+     
+            <!-- Will be populated with TextViews programmatically -->
+        
+        </LinearLayout>
+    </ScrollView>    
+</LinearLayout>
